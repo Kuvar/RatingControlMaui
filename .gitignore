@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/RatingControlMaui/bin/Debug
+/RatingControlMaui/obj
+/.vs
