@@ -26,7 +26,7 @@ namespace RatingControlMaui
         public static readonly BindableProperty AccentColorProperty = BindableProperty.Create(
         nameof(AccentColor),
         typeof(Color),
-        typeof(RatingControl), Colors.Red, BindingMode.TwoWay, propertyChanged: OnPropertyChanged);
+        typeof(RatingControl), Colors.Gold, BindingMode.TwoWay, propertyChanged: OnPropertyChanged);
 
         public double CurrentValue
         {

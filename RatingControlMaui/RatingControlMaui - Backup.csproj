@@ -15,16 +15,13 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
-		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<AssemblyName>$(MSBuildProjectName)</AssemblyName>
 		<PackageId>pankaj.util.RatingControl</PackageId>
 		<Title>RatingControl</Title>
 		<Authors>Pankaj Singh</Authors>
 		<Company>Pankaj Singh</Company>
-		<Product>RatingControl.MAUI</Product>
 		<Description>A  Rating Control for .NET MAUI using an icon font.</Description>
 		<PackageProjectUrl>https://github.com/Kuvar/RatingControlMaui</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/Kuvar/RatingControlMaui</RepositoryUrl>
-		<RepositoryType>git</RepositoryType>
 		<PackageIcon>star-rating.png</PackageIcon>
 		<PackageTags>Rating, MAUI Rating, Rating Control, RatingControl, MAUI Rating Control, MauiRatingControl</PackageTags>
 		<PackageReleaseNotes>A  Rating Control for .NET MAUI using an icon font.</PackageReleaseNotes>
@@ -32,7 +29,7 @@
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 		<AssemblyVersion>1.0.0.0</AssemblyVersion>
 		<FileVersion>1.0.0.0</FileVersion>
-		<Version>1.0.0.2</Version>
+		<Version>1.0.0.1</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -48,7 +45,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <EmbeddedResource Include="Fonts\materialdesignicons-webfont.ttf" />
+	  <MauiAsset Include="Fonts\materialdesignicons-webfont.ttf" />
 	</ItemGroup>
 
 	<ItemGroup>

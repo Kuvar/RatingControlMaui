@@ -3,7 +3,7 @@
     // All the code in this file is included in all platforms.
     public static class AppHostBuilderExtensions
     {
-        public static MauiAppBuilder UseSimpleRatingControl(this MauiAppBuilder builder)
+        public static MauiAppBuilder UseRatingControl(this MauiAppBuilder builder)
         {
             builder.ConfigureFonts(fonts =>
             {
