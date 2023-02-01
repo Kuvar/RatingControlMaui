@@ -51,4 +51,5 @@ Now you can use the `SimpleRatingControl` from this namespace:
 | `AccentColor`  | `Color`       | Sets the color of the element.                           | `Gold`        |		
 
 
-```- Listed on [nuget.org](https://www.nuget.org/packages/pankaj.util.RatingControl)		
+
+- Listed on [nuget.org](https://www.nuget.org/packages/pankaj.util.RatingControl)		
