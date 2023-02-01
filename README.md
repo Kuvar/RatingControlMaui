@@ -23,3 +23,32 @@ builder
 
 return builder.Build();
 ```
+
+
+You must add this namespace to your `xaml` files:
+
+```XML
+xmlns:controls="http://www.pankaj_singh_apps.de/maui/controls"
+```
+
+Now you can use the `SimpleRatingControl` from this namespace:
+```XML
+
+<controls:RatingControl Amount="5" 
+                        CurrentValue="1" 
+                        AccentColor="Gold" 
+                        FontSize="36"/>
+```
+
+
+## Available Properties
+
+| Property       | Type          | Description                                              | Default Value |
+|----------------|---------------|----------------------------------------------------------|---------------|
+| `CurrentValue` | `double`      | Sets the value which should be used as the rating.       | `0`           |
+| `Amount`       | `double`      | Sets the maximum amount                                  | `5`           |
+| `FontSize`     | `double`      | Sets the size of each element.                           | `24`          |
+| `AccentColor`  | `Color`       | Sets the color of the element.                           | `Gold`        |		
+
+
+```- Listed on [nuget.org](https://www.nuget.org/packages/pankaj.util.RatingControl)		
